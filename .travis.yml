@@ -57,4 +57,4 @@ deploy:
 notifications:
   email:
     recipients:
-      - wishty@gmail.com
+      - wishtyus@gmail.com
