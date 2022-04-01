@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 ABSPATH=$(readlink -f $0)
+echo "> $ABSPATH : ABSPATH"
+
 ABSDIR=$(dirname $ABSPATH)
 source ${ABSDIR}/profile.sh
 
