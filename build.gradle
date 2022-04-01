@@ -28,7 +28,7 @@ repositories {
 
 
 configurations {
-    compileOnly {
+    compileOnly {1
         extendsFrom annotationProcessor
     }
 }
@@ -37,15 +37,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-security'
+    annotationProcessor 'org.projectlombok:lombok'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
-    annotationProcessor 'org.projectlombok:lombok'
     compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
     compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
     runtimeOnly 'mysql:mysql-connector-java'
-    compile("org.mariadb.jdbc:mariadb-java-client")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile("org.springframework.security:spring-security-test")
+//    compile("org.mariadb.jdbc:mariadb-java-client")
+//    testCompile('org.springframework.boot:spring-boot-starter-test')
+//    testCompile("org.springframework.security:spring-security-test")
 }
 
 test {
