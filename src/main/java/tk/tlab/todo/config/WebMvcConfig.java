@@ -13,7 +13,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		registry.addMapping("/**")
 						.allowedOrigins("http://localhost:3000",
 							"https://todo-app.tlab.tk",
-							"http://todo-app.tlab.tk"
+							"http://todo-app.tlab.tk",
+							"http://54.180.38.91:8080",
+							"http://54.180.38.91"
 							)
 						.allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
 						.allowedHeaders("*")
